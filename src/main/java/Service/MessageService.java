@@ -7,7 +7,6 @@ import java.util.List;
 
 public class MessageService {
     private MessageDAO messageDAO;
-    private AccountService accountService;
 
     public MessageService() {
         this.messageDAO = new MessageDAO();
@@ -62,6 +61,7 @@ public class MessageService {
         
     }
 
+    //returns a list of all messages byt a user
     public List<Message> getAllMessagesByUserId(int account_id) {
         List<Message> messages = messageDAO.getAllMessagesByUserId(account_id);
         System.out.println(messages);
