@@ -32,10 +32,8 @@ public class MessageDAO {
                 return new Message(generatedId, message.getPosted_by(), message.getMessage_text(), message.getTime_posted_epoch());
             }
         } catch (SQLException e) {
-            System.out.println("SQLException in DAO createNewMessage");
             e.printStackTrace();
         }
-        System.out.println("returning null in DAO createNewMessage");
         return null;
     }
 
