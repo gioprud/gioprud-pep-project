@@ -12,6 +12,7 @@ import java.util.List;
 
 public class AccountDAO {
 
+    //adds an account
     public Account addAccount(Account account) {
         Connection conn = ConnectionUtil.getConnection();
         try {
